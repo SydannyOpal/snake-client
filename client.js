@@ -19,19 +19,7 @@ const connect = function () {
   conn.on('connect', function() {
     console.log('connected')
     conn.write('Name: SYD')
-
-    // setTimeout(() => {
-    //   conn.write("Move: up");
-    // }, 1000);
-    // setTimeout(() => {
-    //   conn.write("Move: left");
-    // },2000);
-    // setTimeout(() => {
-    //   conn.write("Move: down");
-    // }, 3000);
-    // setTimeout(() => {
-    //   conn.write("Move: right");
-    // }, 4000);
+    conn.write('Say: snaakelit')
   return conn;
 });
 
