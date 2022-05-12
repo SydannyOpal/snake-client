@@ -5,7 +5,6 @@ const connect = function () {
   const conn = net.createConnection({
     host: '165.227.47.243', // IP address here,
     port: 50541, // PORT number here,
-    name: SNK
   });
 
   // interpret incoming data as text
@@ -16,6 +15,10 @@ const connect = function () {
     console.log("connected user says:", data);
 
   })
+
+  conn.on('connect', function() {
+    console.log('connected')
+    conn.write('Name: SYD')
   return conn;
 };
 
