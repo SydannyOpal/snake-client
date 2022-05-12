@@ -33,6 +33,6 @@ const connect = function () {
     //   conn.write("Move: right");
     // }, 4000);
   return conn;
-};
+});
 
 module.exports = {connect};
